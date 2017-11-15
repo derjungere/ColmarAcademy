@@ -1,0 +1,373 @@
+html {
+  font-size: 16px;
+  font-family: Helvetica;
+  line-height: 1.4;
+  color: #333333;
+}
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+p {
+  margin: 16px 0;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+p.quote {
+  font-style: italic;
+  font-size: .9rem;
+}
+p.quote-credit {
+  font-size: .9rem;
+}
+a.cta-link {
+  text-decoration: none;
+  color: blue;
+}
+@media only screen and (max-width: 760px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+}
+/* Section section */
+section,
+.container {
+  max-width: 100%;
+}
+section.banner,
+section.courses,
+.info.featured {
+  background-color: lightgray;
+}
+/* Container section */
+nav.container {
+  margin: 0 24px;
+}
+section .container {
+  padding: 32px 0 32px 24px;
+  display: flex;
+}
+/* Column section */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column.main {
+  margin-right: 24px;
+  width: 60%;
+}
+.column.side {
+  width: 40%;
+}
+/* Images section */
+.image_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .image_mobile {
+    display: block;
+  }
+  .image_full {
+    display: none;
+  }
+}
+/* Nav section */
+nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  justify-content: space-between;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+nav .colmar {
+  font-weight: bold;
+  color: darkblue;
+}
+nav .academy {
+  color: grey;
+}
+nav .menu li {
+  display: inline;
+  margin-left: 16px;
+}
+.column.main img {
+  width: 100%;
+}
+nav .mobile-menu {
+  display: none;
+}
+@media only screen and (max-width: 760px) {
+  nav .logo,
+  nav .menu {
+    display: none;
+  }
+  nav .mobile-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 32px;
+  }
+  nav .mobile-menu img {
+    height: 32px;
+  }
+}
+
+/* Banner */
+.banner .column.side {
+  justify-content: center;
+}
+.banner .supporting {
+  width: 80%;
+}
+.banner .supporting p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+a.button {
+  background-color: #333333;
+  text-align: center;
+  color: white;
+  max-width: 80%;
+  padding: 16px 0;
+  display: block;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+@media only screen and (max-width: 760px) {
+  .banner .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .banner .column {
+    width: 100%;
+  }
+  .banner .supporting {
+    margin: 32px 0 32px 16px;
+    width: 90%
+  }
+  .banner .button {
+    max-width: 100%;
+    background-color: gray;
+    font-weight: bold;
+  }
+  .banner .supporting p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Information section */
+.information .column.main {
+  margin-top: 16px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.info .supporting {
+  /*margin-right: 16px;*/
+  width: 45%;
+}
+.info .supporting p {
+  line-height: 1.4;
+  margin: 10px 0;
+}
+.information .supporting h2 {
+  margin: 32px 0 24px 0;
+}
+.information .supporting .quote {
+  margin-bottom: 32px;
+}
+.column.side img {
+  width: 35%;
+  margin: 16px;
+  height: auto;
+}
+@media only screen and (max-width: 760px) {
+  .information .column.main {
+    display: none;
+  }
+  .information .column.side {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  .information .container {
+    flex-direction: column;
+    padding: 0;
+  }
+  .information .info {
+    flex-direction: column;
+    align-items: normal;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 64px;
+  }
+  .info .supporting {
+    width: 100%;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: inherit;
+  }
+  .information .info.featured {
+    background-color: white;
+    margin-bottom: 0;
+  }
+  .column.side img {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* Courses section */
+.courses .container {
+  flex-direction: column;
+  padding: 32px 0;
+}
+.courses h2 {
+  text-align: center;
+  margin-top: 16px;
+}
+.all-courses {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 72px;
+  justify-content: space-around;
+}
+.course {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: white;
+  margin-bottom: 32px;
+}
+.course img {
+  max-width: 100%;
+  height: auto;
+}
+.course .supporting {
+  margin: 24px 16px 24px 16px;
+  width: 70%
+}
+.course .supporting h4 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.course .supporting p {
+  margin: 0;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 760px) {
+  section.courses {
+    background-color: white;
+  }
+  .courses .container {
+    padding: 0;
+    margin: 0;
+  }
+  .courses .all-courses {
+    padding: 0;
+    margin: 0;
+  }
+  .courses .course {
+    padding: 0;
+    margin: 0 24px 16px 24px;
+  }
+  .courses .supporting {
+    padding: 0;
+    margin: 0;
+    width: inherit;
+  }
+  .course {
+    background-color: inherit;
+    width: 100%;
+  }
+  .courses img,
+  .courses h4,
+  .courses p {
+    display: none;
+  }
+  .courses h2 {
+    margin: 16px 0;
+  }
+  .courses h3 {
+    background-color: lightgray;
+    padding: 32px 16px 38px 16px;
+  }
+}
+/* Thesis section */
+section.thesis-exhibit {
+  margin: 32px 0;
+}
+.thesis-exhibit h2 {
+  text-align: center;
+}
+.thesis-exhibit .column.side {
+  justify-content: flex-start;
+}
+.thesis-exhibit .column.side .supporting {
+  width: 45%;
+}
+.thesis-exhibit h3 {
+  margin: 24px 0;
+}
+video {
+  width: 100%;
+}
+@media only screen and (max-width: 760px) {
+  .thesis-exhibit .column.main .supporting,
+  .thesis-exhibit .column.side {
+    display: none;
+  }
+  .thesis-exhibit .container {
+    padding: 0;
+  }
+  .thesis-exhibit .column.main {
+    width: 100%;
+    margin: 0;
+  }
+  video {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+/* Footer section */
+footer {
+  height: 64px;
+}
+footer .copyright {
+  display: flex;
+  margin: 16px 24px;
+  justify-content: space-between;
+  font-size: .8rem;
+}
+footer ul li {
+  display: inline;
+  margin-left: 16px;
+}
+@media only screen and (max-width: 760px) {
+  footer .copyright {
+    margin: 0px 16px;
+    padding: 16px;
+    font-size: .9rem;
+  }
+  footer .footer-links {
+    display: none;
+  }
+}
