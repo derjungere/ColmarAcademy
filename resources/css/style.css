@@ -1,12 +1,13 @@
 html {
   font-size: 16px;
-  font-family: Helvetica;
+  font-family: 'Rubik', sans-serif;
   line-height: 1.4;
   color: #333333;
 }
 h2 {
   font-size: 2.4rem;
   font-weight: bold;
+  font-stretch: expanded;
 }
 h3 {
   font-size: 1.25rem;
@@ -29,6 +30,9 @@ a.cta-link {
   color: blue;
 }
 @media only screen and (max-width: 850px) {
+  html {
+    font-size: 22px;
+  }
   h2 {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -37,7 +41,10 @@ a.cta-link {
     font-size: 1.75rem;
   }
   p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+  }
+  a.cta-link {
+    font-size: 1.4rem;
   }
 }
 /* Section section */
@@ -137,7 +144,6 @@ nav .mobile-menu {
 }
 .banner .supporting p {
   font-size: 1rem;
-  font-weight: bold;
 }
 a.button {
   background-color: #333333;
@@ -148,6 +154,7 @@ a.button {
   display: block;
   font-size: 1rem;
   font-weight: lighter;
+  text-decoration: none;
 }
 @media only screen and (max-width: 850px) {
   .banner .container {
@@ -164,7 +171,7 @@ a.button {
   .banner .button {
     max-width: 100%;
     background-color: gray;
-    font-weight: bold;
+    font-size: 1.2rem;
   }
   .banner .supporting p {
     font-size: 1.2rem;
@@ -186,7 +193,7 @@ a.button {
 }
 .info .supporting p {
   line-height: 1.4;
-  margin: 10px 0;
+  margin: 16px 0;
 }
 .information .supporting h2 {
   margin: 32px 0 24px 0;
@@ -309,6 +316,7 @@ a.button {
   .courses h3 {
     background-color: lightgray;
     padding: 32px 16px 38px 16px;
+    font-weight: normal;
   }
 }
 /* Thesis section */
@@ -365,7 +373,7 @@ footer ul li {
   footer .copyright {
     margin: 0px 16px;
     padding: 16px;
-    font-size: .9rem;
+    font-size: 1.1rem;
   }
   footer .footer-links {
     display: none;
