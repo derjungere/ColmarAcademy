@@ -29,7 +29,7 @@ a.cta-link {
   text-decoration: none;
   color: blue;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   html {
     font-size: 22px;
   }
@@ -82,7 +82,7 @@ section .container {
   display: none;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   .image_mobile {
     display: block;
   }
@@ -119,7 +119,7 @@ nav .menu li {
 nav .mobile-menu {
   display: none;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   nav .logo,
   nav .menu {
     display: none;
@@ -156,7 +156,7 @@ a.button {
   font-weight: lighter;
   text-decoration: none;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   .banner .container {
     flex-direction: column;
     padding: 0;
@@ -206,7 +206,7 @@ a.button {
   margin: 16px;
   height: auto;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   .information .column.main {
     display: none;
   }
@@ -280,7 +280,7 @@ a.button {
   margin: 0;
   line-height: 1.6;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   section.courses {
     background-color: white;
   }
@@ -338,7 +338,7 @@ section.thesis-exhibit {
 video {
   width: 100%;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   .thesis-exhibit .column.main .supporting,
   .thesis-exhibit .column.side {
     display: none;
@@ -369,7 +369,7 @@ footer ul li {
   display: inline;
   margin-left: 16px;
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 850px), (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
   footer .copyright {
     margin: 0px 16px;
     padding: 16px;
