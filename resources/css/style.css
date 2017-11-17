@@ -128,10 +128,10 @@ nav .mobile-menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    height: 32px;
+    height: 64px;
   }
   nav .mobile-menu img {
-    height: 32px;
+    height: 64px;
   }
 }
 
